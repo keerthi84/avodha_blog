@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<title>Registration</title>
+
+<h1>Registration Form</h1>
+<br><br>
+<div class="form-group">
+        <form method="POST" enctype="multipart/form-data" >
+            {% csrf_token %}
+            {{ form.media }}
+            {{ form.as_p }}
+
+            <button>Register</button>
+</div>

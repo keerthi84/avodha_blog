@@ -1,0 +1,21 @@
+<title>Add Post</title>
+{% if user.is_authenticated %}
+    <h1> Add Post</h1>
+    <br><br>
+    <div class="form-group">
+            <form method="POST" enctype="multipart/form-data" >
+                {% csrf_token %}
+                {{ form.media }}
+                {{ form.as_p }}
+
+                <button>Post</button>
+    </div>
+{% else %}
+You are not allowed here!
+{% endif %}
+
+
+
+
+
+

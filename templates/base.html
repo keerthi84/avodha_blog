@@ -1,0 +1,67 @@
+
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Travel Blog</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'bl/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'bl/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'bl/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'bl/css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'bl/style.css' %}">
+    <link rel="stylesheet" href="{% static 'bl/responsive.css' %}">
+</head>
+
+<body>
+<div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="logo">
+                            <h2><a href="#">Travel</a></h2>
+                        </div>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="menu">
+                            <ul>
+                                <li class="active"><a href="/">Home</a></li>
+<!--                                <li><a href="{}">Add Posts</a></li>-->
+<!--                                <li><a href="#">Food</a></li>-->
+<!--                                <li><a href="#">Nature</a></li>-->
+<!--                                <li><a href="#">photography</a></li>-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="bg-text-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="bg-text">
+                            <h3>Travel BLOG </h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+</div>
+
+    <script src="{% static 'bl/js/jquery-3.1.1.min.js' %}"></script>
+    <script src="{% static 'bl/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'bl/js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'bl/js/active.js' %}"></script>
+</body>
+
+</html>
+{% endblock %}
